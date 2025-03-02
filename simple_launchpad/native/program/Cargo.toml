@@ -1,0 +1,19 @@
+[package]
+name = "launch_token"
+version = "0.1.0"
+description = "Native Solana Program"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[features]
+no-entrypoint = []
+
+[dependencies]
+solana-program = "1.16.24"
+borsh = "0.10.3"
+spl-associated-token-account = "2.2.0"
+spl-token = "4.0.0"
+num-derive = "0.4.0"
+thiserror = "1.0.48"
